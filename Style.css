@@ -91,6 +91,17 @@ body{
     font-size: 18px;
     color: rgb(127, 208, 255);
 }
+.contact_info ul .icon a{
+    display: inline-block;
+    width: 25px;
+    font-size: 18px;
+    color: rgb(127, 208, 255);
+}
+.contact_info ul .text a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
 .contact_info ul a{
     display: inline-block;
     width: 25px;
