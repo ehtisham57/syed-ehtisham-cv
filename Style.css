@@ -285,4 +285,15 @@ p{
         grid-template-columns: repeat(1,1fr);
         margin-top: 30px;
     }
+      .contact_info ul .icon a{
+        display: inline-block;
+        width: 15px;
+        font-size: 14px;
+        color: rgb(127, 208, 255);
+    }
+    .contact_info ul .text a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: 100;
+    }
 }
