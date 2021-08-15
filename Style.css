@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    margin: 50px;
+    min-height: 1000px;
+    max-height: 1000px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,1);
+}
+
+
+/* ------------------------------Left_side-------------------------- */
+.container .left_side{
+    position: relative;
+    background: #003157;
+    padding: 40px;
+}
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profiletext .img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profiletext .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profiletext h2{
+    color: rgb(219, 211, 211);
+    font-size: 1em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+.profiletext h2 span{
+    font-size: 0.7em;
+    font-weight: 350;
+}
+.contact_info{
+    padding: 30px;
+}
+.contact_info .title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px
+}
+.contact_info ul{
+    position: relative;
+}
+.contact_info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact_info ul li .icon{
+    display: inline-block;
+    width: 25px;
+    font-size: 18px;
+    color: rgb(127, 208, 255);
+}
+.contact_info ul a{
+    display: inline-block;
+    width: 25px;
+    font-size: 18px;
+    color: rgb(127, 208, 255);
+}
+.contact_info ul li span{
+    color: white;
+}
+.contact_info.Education li{
+    margin-bottom: 15px;
+}
+.contact_info.Education h5{
+    color: rgb(127, 208, 255);
+    font-size: 500;
+}
+.contact_info.Education h4{
+    color: #fff;
+    font-weight: 500;
+    line-height: 35px;
+}
+.contact_info.Education h3{
+    color: rgb(241, 241, 241);
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.contact_info.Language .present{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    display: block;
+    margin-top: 10px;
+}
+.contact_info.Language .present div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(127, 208, 255);
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------right-side --------------- */
+
+
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0px;
+}
+.title2{
+    color: #003157;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: #222;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #003157;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.about .box .text p{
+    color: black;
+    font-size: 14px;
+}
+.skill .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skill .box h4{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 500;
+}
+.skill .box .precent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.skill .box .precent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #63b1ec;
+}
+.Interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.Interest ul li{
+    list-style: none;
+    color: #222;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.Interest ul li .fa{
+    color: #63b1ec;
+    font-size: 18px;
+    width: 25px;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------media query--------------- */
+
+
+
+
+@media (max-width: 1000px) {
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Interest ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media (max-width: 600px){
+    .about .box
+    {
+        flex-direction: column;
+    }
+    .about .box .year_company
+    {
+        margin-bottom: 5px;
+    }
+    .Interest ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skill .box{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 30px;
+    }
+}
